@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+.card {
+  @apply bg-panel rounded-xl p-4 border border-slate-700/50;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply btn bg-accent/20 text-accent border border-accent/40 hover:bg-accent/30;
+}
+
+.btn-ghost {
+  @apply btn bg-slate-700/30 text-slate-300 hover:bg-slate-700/50;
+}
+
+.prose-report h1 { @apply text-2xl font-bold text-white mt-2 mb-3; }
+.prose-report h2 { @apply text-lg font-semibold text-accent mt-5 mb-2; }
+.prose-report h3 { @apply text-base font-semibold text-slate-100 mt-4 mb-2; }
+.prose-report p  { @apply my-2 text-slate-300; }
+.prose-report ul { @apply list-disc pl-6 my-2 text-slate-300; }
+.prose-report li { @apply my-1; }
+.prose-report strong { @apply text-white; }
+.prose-report em { @apply text-slate-400; }
+.prose-report hr { @apply border-slate-700 my-4; }
